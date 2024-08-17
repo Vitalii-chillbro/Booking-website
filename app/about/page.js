@@ -12,9 +12,9 @@ export const metadata = {
 export default async function Page() {
   const cabins = await getCabins();
   return (
-    <div className="grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center">
+    <div className="grid grid-cols-1  gap-y-12 text-md items-center sm:text-lg sm:grid-cols-5 sm:gap-x-24 sm:gap-y-32">
       <div className="col-span-3">
-        <h1 className="text-4xl mb-10 text-accent-400 font-medium">
+        <h1 className="text-2xl mb-10 text-accent-400 font-medium sm:text-4xl">
           Welcome to Serenity Suites
         </h1>
 
@@ -48,7 +48,7 @@ export default async function Page() {
         />
       </div>
 
-      <div className="relative col-span-2 aspect-square">
+      <div className="relative col-span-2 aspect-square hidden sm:block">
         <Image
           src={image2}
           fill
@@ -79,7 +79,7 @@ export default async function Page() {
             every visit is like coming home.
           </p>
 
-          <div>
+          <div className="flex justify-center sm:block">
             <a
               href="/cabins"
               className="inline-block mt-4 bg-accent-500 px-8 py-5 text-primary-800 text-lg font-semibold hover:bg-accent-600 transition-all"

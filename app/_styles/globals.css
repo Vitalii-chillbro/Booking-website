@@ -31,13 +31,23 @@
     }
 }
 
-
-/* For data picker */
-
-
 .rdp {
     --rdp-cell-size: 32px !important;
     --rdp-accent-color: theme('colors.accent.500') !important;
     --rdp-background-color: theme('colors.accent.600') !important;
     margin: 0 !important;
+}
+
+@media (max-width: 640px) {
+    .rdp-months {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .rdp-month {
+        margin: 0 !important;
+    }
+
+
 }

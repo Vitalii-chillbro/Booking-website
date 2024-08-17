@@ -14,10 +14,10 @@ export default async function Page({ searchParams }) {
   const filter = searchParams?.capacity ?? "all";
   return (
     <div>
-      <h1 className="text-4xl mb-5 text-accent-400 font-medium">
+      <h1 className="text-2xl mb-5 text-accent-400 font-medium sm:text-4xl">
         Our Luxury Cabins
       </h1>
-      <p className="text-primary-200 text-lg mb-10">
+      <p className="text-primary-200 text-sm mb-10 sm:text-lg">
         Cozy yet luxurious cabins, located right in the heart of the Italian
         Dolomites. Imagine waking up to beautiful mountain views, spending your
         days exploring the dark forests around, or just relaxing in your private
